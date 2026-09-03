@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-20T11:00:00Z",
+  "description": "Vuemio Remote Channel Configuration Manifest",
+  "channels": {
+    "sky-sports-f1": {
+      "name": "Sky Sports F1",
+      "shortName": "Sky Sp F1",
+      "category": "sports",
+      "targets": [
+        {
+          "providerName": "NOW",
+          "url": "nowtv://go/query/service_key/10292/play",
+          "fallbackURL": "nowtv://",
+          "urlIsExactRoute": true
+        },
+        {
+          "providerName": "Sky Go",
+          "url": "skygo://",
+          "fallbackURL": "skygo://",
+          "urlIsExactRoute": false
+        }
+      ]
+    },
+    "sky-sports-premier-league": {
+      "name": "Sky Sports Premier League",
+      "shortName": "Sky Sp PL",
+      "category": "sports",
+      "targets": [
+        {
+          "providerName": "NOW",
+          "url": "nowtv://go/query/service_key/10287/play",
+          "fallbackURL": "nowtv://",
+          "urlIsExactRoute": true
+        },
+        {
+          "providerName": "Sky Go",
+          "url": "skygo://",
+          "fallbackURL": "skygo://",
+          "urlIsExactRoute": false
+        }
+      ]
+    },
+    "tnt-sports-1": {
+      "name": "TNT Sports 1",
+      "shortName": "TNT Sports 1",
+      "category": "sports",
+      "targets": [
+        {
+          "providerName": "HBO Max",
+          "url": "hbomax://",
+          "fallbackURL": "hbomax://",
+          "urlIsExactRoute": false
+        },
+        {
+          "providerName": "Discovery+",
+          "url": "discoveryplus://",
+          "fallbackURL": "discoveryplus://",
+          "urlIsExactRoute": false
+        },
+        {
+          "providerName": "Sky Go",
+          "url": "skygo://",
+          "fallbackURL": "skygo://",
+          "urlIsExactRoute": false
+        }
+      ]
+    }
+  }
+}

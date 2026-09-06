@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-20T11:00:00Z",
+  "updatedAt": "2026-09-06T00:00:00Z",
   "description": "Vuemio Remote Channel Configuration Manifest",
   "channels": {
     "sky-sports-f1": {
@@ -53,10 +53,10 @@
           "urlIsExactRoute": false
         },
         {
-          "providerName": "Discovery+",
-          "url": "discoveryplus://",
-          "fallbackURL": "discoveryplus://",
-          "urlIsExactRoute": false
+          "providerName": "NOW",
+          "url": "nowtv://go/query/service_key/3625/play",
+          "fallbackURL": "nowtv://",
+          "urlIsExactRoute": true
         },
         {
           "providerName": "Sky Go",
@@ -64,7 +64,29 @@
           "fallbackURL": "skygo://",
           "urlIsExactRoute": false
         }
-      ]
+      ],
+      "regionalTargets": {
+        "ie-republic-of-ireland": [
+          {
+            "providerName": "NOW Ireland",
+            "url": "nowtv://go/query/service_key/3625/play",
+            "fallbackURL": "nowtv://",
+            "urlIsExactRoute": true
+          },
+          {
+            "providerName": "HBO Max",
+            "url": "hbomax://",
+            "fallbackURL": "hbomax://",
+            "urlIsExactRoute": false
+          },
+          {
+            "providerName": "Sky Go",
+            "url": "skygo://",
+            "fallbackURL": "skygo://",
+            "urlIsExactRoute": false
+          }
+        ]
+      }
     }
   }
 }
